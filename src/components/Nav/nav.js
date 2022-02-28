@@ -8,7 +8,10 @@ const Nav = () => {
         {navLinks &&
           navLinks.map((link, index) => {
             return (
-              <ul key={index} className="text-emerald-500">
+              <ul
+                key={index}
+                className="cursor-default text-emerald-500 hover:text-white"
+              >
                 <Link href={link.path} passHref>
                   <li key={index}>{link.name}</li>
                 </Link>
